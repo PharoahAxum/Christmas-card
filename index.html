@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Christmas Card</title>
+</head>
+<body>
+  <div id="card-container">
+    <img src="https://images.pexels.com/photos/2893330/pexels-photo-2893330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" id="card-image">
+    <p id="card-text">Your text here</p>
+  </div>
+  <div id="user-background">
+    <div>
+      <img src="https://images.pexels.com/photos/3877818/pexels-photo-3877818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+    </div>
+    <div>
+      <img src="https://images.pexels.com/photos/5709009/pexels-photo-5709009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+    </div>
+    <div>
+      <img src="https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+    </div>
+  </div>
+  
+  <div id="user-input">
+    <label for="user-text">Write a custom message here</label>
+    <textarea name="user-text" id="user-text" cols="30" rows="10" oninput="updateText()"></textarea>
+  </div>
+  <div id="user-color">
+    <p>Choose a color for your message</p>
+    <div style="background-color: turqoise" onClick="changeColor('turquoise')"></div>
+    <div style="background-color: red" onClick="changeColor('red')"></div>
+    <div style="background-color: blue" onClick="changeColor('blue')"></div>
+    <div style="background-color: green" onClick="changeColor('green')"></div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
